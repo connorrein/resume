@@ -1,0 +1,128 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\usepackage[T1]{fontenc}
+\usepackage[scale=0.9]{geometry}
+\usepackage{paralist}
+
+\moderncvcolor{purple}
+\moderncvstyle{classic}
+
+\name{Connor}{Reinholdtsen}
+\title{Software Engineer}
+\address{Seattle, WA}
+\email{connor@connorrein.com}
+\homepage{connorrein.com}
+\social[github][github.com/connorrein]{connorrein}
+\social[linkedin][linkedin.com/in/connorrein]{Connor Reinholdtsen}
+
+\begin{document}
+
+\makecvtitle
+
+\section{Education}
+
+\cventry{09/2024--06/2025}{Master of Science in Computer Science}{University of Washington}{Seattle, WA}{}{}
+
+\cventry{09/2020--06/2024}{Bachelor of Science in Computer Science}{University of Washington}{Seattle, WA}{3.92}{}
+
+\cventry{09/2020--06/2024}{Bachelor of Arts in Mathematics}{University of Washington}{Seattle, WA}{3.92}{}
+
+\section{Experience}
+
+\cventry{10/2025--Present}{Software Engineer}{Qualtrics}{Seattle, WA}{}{
+  \begin{compactitem}
+    \item Working on XM Directory
+  \end{compactitem}
+}
+
+\cventry{09/2023--06/2025}{Teaching Assistant}{University of Washington}{Seattle, WA}{}{
+  \begin{compactitem}
+    \item Instructed 300+ students across Software Engineering and Compiler
+    Construction courses
+    \item Led classroom sections, delivered live lecture demonstrations,
+    mentored 5 full-stack project teams, authored materials for 7 exams, hosted
+    office hours, managed course infrastructure
+  \end{compactitem}
+}
+
+\cventry{06/2022--09/2022}{Software Engineer Intern}{MedBridge}{Seattle, WA}{}{
+  \begin{compactitem}
+    \item Built Apriori-based service with Python, Docker, Kubernetes/EKS, and
+    S3 to mine user behavior in MedBridge's Home Exercise Program and generate
+    25,000+ accepted exercise suggestions daily
+    \item Built internal tools in React, Redux, and Go to automate video
+    captioning for clinical content
+    \item Collaborated in an Agile team using CI/CD pipelines, logging, sprint
+    planning, and code reviews
+  \end{compactitem}
+}
+
+\cventry{10/2020--06/2022}{Software Engineer}{Husky Robotics}{Seattle, WA}{}{
+  \begin{compactitem}
+    \item Used React, Redux, and CSS to implement user interface for drivers to
+    operate our rover
+    \item Built Unity rover simulator for testing autonomous navigation,
+    inverse kinematics, and driver controls.
+  \end{compactitem}
+}
+
+\section{Skills}
+
+\cvitem{Languages}{
+  Python, Java, Kotlin, C\#, C, C++, Go, HTML, CSS, JavaScript, SQL, Bash,
+  \LaTeX
+}
+\cvitem{Tools}{Git, Linux, Docker, Kubernetes, AWS, Unity, Godot}
+\cvitem{Frameworks}{React, Node.js, PyTorch, OpenGL}
+\cvitem{Concepts}{
+  compilers, game engines, deep learning, algorithms and complexity, operating
+  systems, distributed systems, natural language processing, computer vision,
+  quantum computing, embedded systems
+}
+
+\section{Projects}
+
+\cventry{09/2023--12/2023}{\href{https://github.com/mc-quest/mc-quest}{MCQuest \faGithub}}{}{}{}{
+  \begin{compactitem}
+    \item Built a scalable Java-based MMORPG server with questing, dungeons,
+    leveling, and item systems
+    \item Engineered behavior tree-based AI and spatial hash-accelerated
+    collision, entity, and combat systems
+    \item Collaborated in an 8-person team using sprint cycles, standups, and
+    CI/CD to deliver rapid iterations
+  \end{compactitem}
+}
+
+\cventry{01/2023--03/2023}{SimpleDB -- CSE M 544: Database System Internals}{University of Washington}{}{}{
+  \begin{compactitem}
+    \item Built core RDBMS features (heap files, buffer pool, seq scan) in Java
+    for SQL query execution
+    \item Engineered relational operators with iterator pattern and
+    transactional insert/delete
+    \item Implemented ACID transactions with 2PL, deadlock detection, and WAL
+    (REDO/UNDO, CLRs)
+  \end{compactitem}
+}
+
+\cventry{01/2023--03/2023}{xk Operating System Kernel -- CSE 451: Operating Systems}{University of Washington}{}{}{
+  \begin{compactitem}
+    \item Built kernel features in C and x86 for process control, syscalls, and
+    file descriptors
+    \item Implemented multiprocessing and memory management (COW fork, heap
+    growth, stack paging)
+    \item Developed crash-safe, writable file system with logging and
+    multi-extent inodes
+  \end{compactitem}
+}
+
+\cventry{09/2022--12/2022}{MiniJava Compiler -- CSE 401: Compiler Construction}{University of Washington}{}{}{
+  \begin{compactitem}
+    \item Built a compiler in Java for MiniJava, a Java subset, targeting x86
+    assembly
+    \item Implemented lexing, parsing, static semantic analysis with symbol
+    tables, and code generation
+    \item Implemented vtables for object-oriented dynamic dispatch
+  \end{compactitem}
+}
+
+\end{document}
