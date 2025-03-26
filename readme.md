@@ -1,3 +1,3 @@
 # Resume
 
-Source code for my resume.
+My resume.
