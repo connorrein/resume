@@ -16,13 +16,13 @@ jobs:
     - name: Compile LaTeX document
       uses: xu-cheng/latex-action@v3
       with:
-        root_file: main.tex
+        root_file: resume.tex
 
     - name: Upload PDF as artifact
       uses: actions/upload-artifact@v3
       with:
-        name: main.pdf
-        path: main.pdf
+        name: resume.pdf
+        path: resume.pdf
 
   release:
     needs: build
@@ -33,7 +33,7 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
-          name: main.pdf
+          name: resume.pdf
 
       - name: Create release
         id: create_release
@@ -50,6 +50,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: main.pdf
+          asset_path: resume.pdf
           asset_name: connor-reinholdtsen-resume.pdf
           asset_content_type: application/pdf
